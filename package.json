@@ -1,0 +1,25 @@
+{
+    "name": "com.edonet.atbook",
+    "displayName": "AtBook",
+    "version": "1.0.0",
+    "description": "@book",
+    "main": "index.js",
+    "scripts": {
+        "ios": "cordova run ios",
+        "android": "cordova run android"
+    },
+    "author": "Apache Cordova Team",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-whitelist": "^1.3.2"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {}
+        },
+        "platforms": [
+            "ios"
+        ]
+    }
+}

@@ -57,3 +57,20 @@ typings/
 # dotenv environment variables file
 .env
 
+# mac osx
+.DS_Store
+
+# Cordova
+www/
+platforms/
+
+# backup
+*.bak
+*.bak.*
+
+# Sublime Text
+*.sublime-workspace
+
+# VS Code
+.vscode/
+
