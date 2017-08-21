@@ -1,12 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.edonet.atbook" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>AtBook</name>
-    <description>
-        @book
-    </description>
-    <author email="edonet@163.com" href="http://cordova.io">
-        edonet
-    </author>
+    <display-name>友书</display-name>
+    <description>@book</description>
+    <author email="edonet@163.com" href="http://cordova.io">edonet</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -15,13 +12,31 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <hook src="hooks/rename.js" type="after_prepare" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <icon density="ldpi" height="36" src="res/icon/android/icon-ldpi.png" width="36" />
+        <icon density="mdpi" height="48" src="res/icon/android/icon-mdpi.png" width="48" />
+        <icon density="hdpi" height="72" src="res/icon/android/icon-hdpi.png" width="72" />
+        <icon density="xhdpi" height="96" src="res/icon/android/icon-xhdpi.png" width="96" />
+        <icon density="xxhdpi" height="144" src="res/icon/android/icon-xxhdpi.png" width="144" />
+        <icon density="xxxhdpi" height="192" src="res/icon/android/icon-xxxhdpi.png" width="192" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+        <icon height="29" src="res/icon/ios/icon-29.png" width="29" />
+        <icon height="58" src="res/icon/ios/icon-29@2x.png" width="58" />
+        <icon height="87" src="res/icon/ios/icon-29@3x.png" width="87" />
+        <icon height="40" src="res/icon/ios/icon-40.png" width="40" />
+        <icon height="80" src="res/icon/ios/icon-40@2x.png" width="80" />
+        <icon height="57" src="res/icon/ios/icon-57.png" width="57" />
+        <icon height="114" src="res/icon/ios/icon-57@2x.png" width="114" />
+        <icon height="60" src="res/icon/ios/icon-60.png" width="60" />
+        <icon height="120" src="res/icon/ios/icon-60@2x.png" width="120" />
+        <icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
     </platform>
+    <engine name="android" spec="^6.2.3" />
     <engine name="ios" spec="^4.4.0" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
 </widget>
